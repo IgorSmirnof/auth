@@ -11,6 +11,8 @@ router.post('/signup', [
 ], controller.registration)
 router.post('/signin', controller.login)
 router.get('/users/me', controller.getUsers)
+router.post('/', controller.any)
+
 // router.get('/users', roleMiddleware(["ADMIN"]), controller.getUsers)
 
 module.exports = router
